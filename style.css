@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url(./images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 24rem;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  padding: 1rem;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  position: relative;
+  top: 2rem;
+  max-width: 37.5rem;
+}
+
+.card {
+  position: relative;
+  color: white;
+}
+.card-front {
+  left: -2.5rem;
+}
+
+.cards div img {
+  width: 21rem;
+}
+.info-container {
+  height: 80%;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-info {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card-number {
+  font-size: 1.579rem;
+}
+.cards .info-container img {
+  width: 5rem;
+}
+.info-container .holder {
+  display: flex;
+  justify-content: space-between;
+}
+.card-back {
+  width: 18rem;
+  top: 5.2rem;
+  right: -2rem;
+}
+.card-back div {
+  position: absolute;
+  top: 5.3rem;
+  right: 0rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 52vh;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(197, 197, 197);
+}
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+input:hover {
+  border: 2px #9f90ae solid;
+}
+.date-inputs {
+  display: flex;
+  gap: 1rem;
+}
+.date-inputs input {
+  width: 33%;
+}
+.date-cvc {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+button {
+  background-color: #261232;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+span {
+  display: block;
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.completed {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.completed h2 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+.completed p {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+.completed button {
+  width: 120%;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/bg-main-desktop.png);
+    background-size: contain;
+  }
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 70rem;
+  }
+  .cards {
+    display: flex;
+  }
+  .card-front {
+    left: -12.5rem;
+    top: -8rem;
+  }
+  .card-back {
+    right: -11rem;
+  }
+}
